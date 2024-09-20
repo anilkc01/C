@@ -33,7 +33,7 @@ int main()
         //if first 4 bytes matches of jpeg, we found new jpeg
         if ((buff[0] == 0xff) && (buff[1] == 0xd8) && (buff[2] == 0xff) && (buff[3] >= 0xe0) && (buff[3] <= 0xef))
         {
-            printf(" jpeg found\n");
+            printf(" pdf found\n");
 
             // Close the previous file if it's open
             if (out != NULL)
